@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>yolo_detector</name>
+  <version>0.1.0</version>
+  <description>YOLOv8n ONNX detector node for ROS 2</description>
+  <maintainer email="you@example.com">you</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+</package>

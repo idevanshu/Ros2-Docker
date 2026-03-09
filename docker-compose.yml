@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  ros2_dev:
+    build: .
+    container_name: ros2_auto_container
+    stdin_open: true
+    tty: true
+    network_mode: host
+    environment:
+      - DISPLAY=:0
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ./workspace:/ros2_ws
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu, compute, graphics, utility]

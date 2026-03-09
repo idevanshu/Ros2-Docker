@@ -1,0 +1,18 @@
+# ROS2 build artifacts
+workspace/build/
+workspace/install/
+workspace/log/
+
+# Python
+__pycache__/
+*.pyc
+
+# Docker temp
+*.log
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
